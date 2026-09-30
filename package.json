@@ -1,0 +1,18 @@
+{
+    "name": "visitor-management-system",
+    "private": true,
+    "workspaces": [
+        "api",
+        "vms_web"
+    ],
+    "scripts": {
+        "dev:api": "npm run dev -w api",
+        "dev:web": "npm run start -w vms_web",
+        "seed:demo": "npm run seed:demo -w api",
+        "test": "npm test -w api",
+        "build": "npm run build -w vms_web"
+    },
+    "engines": {
+        "node": "^24.0.0"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "api",
+    "version": "0.3.0",
+    "type": "module",
+    "scripts": {
+        "dev": "node --watch src/server.js",
+        "start": "node src/server.js",
+        "test": "node --test src/*.test.js",
+        "seed:admin": "node src/seed-admin.js",
+        "seed:demo": "node src/seed-demo.js"
+    },
+    "dependencies": {
+        "argon2": "^0.44.0",
+        "cookie-parser": "^1.4.7",
+        "dotenv": "^17.0.0",
+        "express": "^5.1.0",
+        "express-rate-limit": "^8.0.0",
+        "helmet": "^8.0.0",
+        "mongodb": "^6.20.0",
+        "zod": "^4.0.0"
+    },
+    "engines": {
+        "node": "^24.0.0"
+    }
+}
